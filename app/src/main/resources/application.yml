@@ -1,0 +1,10 @@
+# Default profile is "dev" one.
+# To start with production settings, run java -jar app.war --spring.profiles.active=production
+
+spring:
+  profiles.active: dev
+  aop.auto: false
+  jpa:
+    properties:
+      hibernate.jdbc.batch_size: 100
+      jadira.usertype.autoRegisterUserTypes: true
